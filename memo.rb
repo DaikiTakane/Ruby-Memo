@@ -6,7 +6,7 @@ memo_type = gets.chomp
 
 if memo_type == "1"
     puts "拡張子を除いたファイル名を入力してください"
-    file_name = gets.to_s
+    file_name = gets.chomp
     file = File.open("#{file_name}.csv","w")
     puts "内容を記入してください"
     puts "完了したらctrl + Dを押してください"
@@ -15,7 +15,7 @@ if memo_type == "1"
     
 elsif memo_type == "2"
     puts "拡張子を除いたファイル名を入力してください"
-    file_name = gets.to_s
+    file_name = gets.chomp
     file = File.open("#{file_name}.csv","a")
     puts "内容を記入してください"
     puts "完了したらctrl + Dを押してください"
